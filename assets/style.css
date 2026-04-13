@@ -244,6 +244,35 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+
+/*	optimisation du contraste des boutons du carousel et filtres */
+/* Indicateurs (pils) : */
+.carousel-indicators button {
+	background-color: black !important;
+	border: 1px solid white !important;
+}
+.carousel-indicators button.active {
+	background-color: white !important;
+}
+.nav-pills .nav-link.active-tag	{
+	color: black !important;
+}
+/* Flèches carousel : */
+.carousel-control-prev, .carousel-control-next {
+	color: black !important;
+}
+.carousel-control-next:hover {
+	color: black !important;
+}
+/* Filtres : */
+.nav-link:hover {
+	background-color:  #BEB45A;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -353,4 +382,5 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+
 
