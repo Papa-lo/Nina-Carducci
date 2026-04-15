@@ -270,7 +270,13 @@ input[type="submit"] {
 	border-radius: 0;
 	cursor: pointer;
 }
-
+/* Carte de visite */
+[itemscope][itemtype="https://schema.org/ProfessionalService"] {
+	font-size: 0.9em;
+	margin-top: 20px;
+	padding: 10px;
+	border-top: 1px solid #eee;
+}
 
 
 @media all and (max-width: 1180px) {

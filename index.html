@@ -12,32 +12,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<!-- Préchargement carrousel -->
 	<link rel="preload" href="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" as="image">
-
-	<!-- Referencement avec schema.org -->
-	<script type="application/ld+json">
-	{
-	"@context": "https://schema.org",
-	"@type": "ProfessionalService",
-	"name": "Nina Carducci",
-	"image": "https://papa-lo.github.io/Nina-Carducci/assets/images/nina.webp",
-	"url": "https://papa-lo.github.io/Nina-Carducci/",
-	"telephone": "0556677889",
-	"address": {
-		"@type": "PostalAddress",
-		"streetAddress": "68 avenue Alsace-Lorraine",
-		"addressLocality": "Bordeaux",
-		"postalCode": "33200",
-		"addressCountry": "FR"
-	},
-	"openingHoursSpecification": {
-		"@type": "OpeningHoursSpecification",
-		"dayOfWeek": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ],
-		"opens": "10:00",
-		"closes": "19:00"
-	}
-	}
-	</script>
-
 	<!-- Facebook, linkedIn et WhatsApp -->
 	<meta property="og:title" content="Nina Carducci - Photographe Professionnelle à Bordeaux" />
 	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Capturez vos moments précieux : portraits, mariages et événements avec un regard unique et authentique." />
@@ -191,6 +165,24 @@
 				<img src="./assets/images/camera.webp" alt="image d'une camera">
 			</div>
 		</div>
+		<!-- meta données -->
+		<div itemscope itemtype="https://schema.org/ProfessionalService">
+			<h4 itemprop="name">Nina Carducci</h4>
+			<meta itemprop="image" content="https://papa-lo.github.io/Nina-Carducci/assets/images/nina.webp">
+			<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<span itemprop="streetAddress">68 Avenue Alsace-Lorraine</span><br>
+				<span itemprop="postalCode">33200</span> <span itemprop="addressLocality">Bordeaux</span>, <span itemprop="addressCountry">FR</span>
+			</div>
+			<!-- Téléphone -->
+			<span itemprop="telephone">05 56 67 78 89</span><br>
+			<!-- Horaires -->
+			<div itemprop="openingHoursSpecification" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
+				Ouvert du <span itemprop="dayOfWeek" itemscope itemtype="https://schema.org/DayOfWeek"><meta itemprop="name" content="Monday">Lundi</span>
+				au <span itemprop="dayOfWeek" itemscope itemtype="https://schema.org/DayOfWeek"><meta itemprop="name" content="Friday">Vendredi</span>
+				de <time itemprop="opens">10:00h</time> à <time itemprop="closes">19:00h</time>.
+			</div>
+		</div>
+		<!-- meta données -->
 	</section>
 </main>
 <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
